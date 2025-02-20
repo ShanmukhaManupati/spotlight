@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background:black;
+    cursor: none;
+}
+.content{
+    font-size: 3rem;
+    color: #ffffff;
+    user-select: none;
+    font-family: monospace;
+    font-weight: bold;
+    /* box-shadow:-50% -50% 0 -50px rgb(rgb(193, 23, 23));  */
+    
+    
+    
+}
+
+.content:hover ~ .Spotlight {
+    transform: scale(0.8);
+
+}
+.content:hover{
+    color: aliceblue;
+}
+
+/* body:hover>.Spotlight{
+    opacity:1;
+} */
+
+.Spotlight{
+    position: fixed;
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    background:white;
+    mix-blend-mode:difference;
+    pointer-events: none;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(0.1);
+}
+/* body.active .Spotlight{
+    box-shadow: 0 0 0 10000px rgb(0,0,0,1);
+} */
